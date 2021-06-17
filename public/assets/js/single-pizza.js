@@ -60,15 +60,8 @@ function printPizza(pizzaData) {
 
 function printComment(comment) {
   // make div to hold comment and subcomments
-  const commentDiv = document.createElement("div");
-  commentDiv.classList.add(
-    "my-2",
-    "card",
-    "p-2",
-    "w-100",
-    "text-dark",
-    "rounded"
-  );
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('my-2', 'card', 'p-2', 'w-100', 'text-dark', 'rounded');
 
   const commentContent = `
       <h5 class="text-dark">${comment.writtenBy} commented on ${comment.createdAt}:</h5>
@@ -79,7 +72,7 @@ function printComment(comment) {
             ? `<h5>${comment.replies.length} ${
                 comment.replies.length === 1 ? 'Reply' : 'Replies'
               }</h5>
-        ${comment.replies.map(printReply).join("")}`
+        ${comment.replies.map(printReply).join('')}`
             : '<h5 class="p-1">No replies yet!</h5>'
         }
       </div>
