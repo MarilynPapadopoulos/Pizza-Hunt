@@ -5,7 +5,7 @@ const ReplySchema = new Schema(
   {
     replyId: {
       type: Schema.Types.ObjectId,
-      default: () => new Types.ObejectId()
+      default: () => new Types.ObjectId()
     },
     replyBody: {
       type: String
